@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>BIXI2 Reportcenter</title>
+    <link rel="stylesheet" type="text/css" href="/static/3rdlibs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/3rdlibs/jquery/jquery-ui-1.10.4.custom.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/3rdlibs/jquery/jquery.marquee.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/3rdlibs/treeview/bootstrap-treeview.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/customer.css" />
+    <script type="text/javascript"  src='/static/3rdlibs/jquery/jquery-2.1.3.min.js'></script>
+    <script type="text/javascript" src='/static/3rdlibs/jquery/jquery-ui-1.10.4.custom.min.js'></script>
+    <script type="text/javascript" src='/static/3rdlibs/jquery/jquery-slider.js'></script>
+    <script type="text/javascript" src='/static/3rdlibs/jquery/jquery.marquee.js'></script>
+    <script type="text/javascript"  src='/static/3rdlibs/bootstrap/js/bootstrap.min.js'></script>
+    <script type="text/javascript"  src='/static/3rdlibs/treeview/bootstrap-treeview.min.js'></script>
+    <script type="text/javascript"  src='/static/js/login.js'></script>
+</head>
+<body style="background-color:#4c86c6;"  onkeydown="Enter()">
+    <div style="background:url('/static/images/Login.jpg') center top no-repeat; margin:0 auto; width:1005px;height:650px;">
+        <input id="username" type="text" style="width:218px;margin-top:289px;margin-left:406px;" ></input><br/>
+        <input id="pwd" type="password" style="margin-top:19px;margin-left:406px; width:218px;" ></input><br/>
+        <button class="btn btn-md btn-primary" style="margin-top:19px;margin-left:406px;width:80px;" onclick="Login()">Login</button>
+        <button class="btn btn-md btn-default" style="margin-top:19px;margin-left:30px;width:80px;" onclick="Exit()">Reset</button>
+        <div style="position:absolute; margin-top:-180px; margin-left:5px; width:280px;height:200px">
+            <label style="width:280px; height:36px; text-align:center; vertical-align:middle; font-size:16pt;">Honor</label>
+            <div id="banner_tabs" class="flexslider">
+                <ul class="slides">
+                    <li><a title="" href="#"><img alt="" style="width:280px;height:165px;" src="/static/images/swpc.jpg"></a></li>
+                    <li><a title="" href="#"><img alt="" style="width:280px;height:165px;" src="/static/images/swpc.jpg"></a></li>
+                </ul>
+                <ul class="flex-direction-nav">
+                    <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+                    <li><a class="flex-next" href="javascript:;">Next</a></li>
+                </ul>
+                <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+                    <li><a>1</a></li>
+                    <li><a>2</a></li>
+                </ol>
+            </div>
+        </div>
+        <div style="position:absolute; margin-top:-180px; margin-left:715px; width:280px;height:200px">
+            <label style="width:280px; height: 36px;text-align:center;vertical-align: middle;font-size: 16pt;">Broadcast</label>
+            <ul id="marquee1" class="marquee">
+                <li>2015-11-06 honglinx.liao@intel.com upload a BIXI2 Report.</li>
+                <li>2015-11-05 shaoyongx.niu@itnel.com add a new project.</li>
+                <li>2015-11-04 lin.cao@intel.com upload a BIXI2 Report.</li>
+                <li>2015-11-03 wentaox.luo@intel.com has registered.</li>
+                <li>2015-11-02 guoxian.lou@intel.com add a new test plan.</li>
+            </ul>
+        </div>
+        <div style="position:absolute; margin-top:180px; margin-left:420px; width:280px; color:white;">
+            <label>© OTC Android PnP Team</label>
+        </div>
+        <div style="position:absolute; margin-top:220px; margin-left:300px; width:980px;color:#98FB98;">
+            If you want to be our customer, please cantact <a href="mailto:guoxian.lou@intel.com?subject=regist&body=%0d%0ayyy" style="color:#8B1A1A;">guoxian.lou@intel.com</a>
+        </div>
+    </div>
+</body>
+</html>
